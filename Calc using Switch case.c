@@ -1,4 +1,6 @@
-// Online C compiler to run C program online
+/*Name: Mohd Rahman Khan
+Class: Mechanical       Div.:F
+UIN:251M004*/
 #include <stdio.h>
 
 int main() {
@@ -25,6 +27,13 @@ int main() {
     break;
     default:
     printf("invalid choice");
-    break;}
+    break;
+        
+    }
+    return 0;
+    
+}
+
+
+
    
-    return 0;}
