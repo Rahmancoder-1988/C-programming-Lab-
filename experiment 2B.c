@@ -1,22 +1,30 @@
-
+/*Name :Mohd Rahman Khan
+Branch:Mechanical    Div:F
+UIN:251M004      Roll no.:04*/
 #include <stdio.h>
-/* Name:Mohd.Rahman Khan
-Class:Mechanical      Div.:F
-UIN:251M004 */
-    int main() {
-    int num1, num2, i, sum = 0;
-    printf("enter the first number");
-    scanf("%d", &num1);
-    printf("enter the second number");
-    scanf("%d",&num2);
-    if (num1>num2)
-    {
-    int temp = num1;
-    num1=num2;
-    num2=temp;
+
+int main() {
+    int start, end, i, sum = 0;
+
+    printf("Enter the first number: ");
+    scanf("%d", &start);
+
+    printf("Enter the second number: ");
+    scanf("%d", &end);
+
+    if (start > end) {
+        int temp = start;
+        start = end;
+        end = temp;
     }
-    for(i = num1 + 1;i < num2; i++)
-       { sum+= i;}
-       printf("sum of all the numbers between %d and %d is: %d\n", num1, num2, sum);
+    for (i = start; i <= end; i++) {
+        if (i % 2 != 0) { 
+            sum += i;
+        }
+    }
+
+    printf("\nSum of all odd numbers between %d and %d = %d\n", start, end, sum);
+
     return 0;
 }
+
